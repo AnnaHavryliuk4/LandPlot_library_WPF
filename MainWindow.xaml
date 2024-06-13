@@ -1,0 +1,10 @@
+﻿<Window x:Class="Lab4_Library__WPF.MainWindow"
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Settlement Management" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="SettlementListBox" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="400" Margin="10,10,0,0" SelectionChanged="SettlementListBox_SelectionChanged"/>
+        <Button Content="Add Settlement" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="420,10,0,0" Click="AddSettlement_Click"/>
+        <Button x:Name ="EditLandPlot" Content="Edit Settlement" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="420,50,0,0" Click="EditSettlement_Click" IsEnabled="False"/>
+    </Grid>
+</Window>
